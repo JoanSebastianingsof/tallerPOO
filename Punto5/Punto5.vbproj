@@ -69,11 +69,14 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\Figura.vb" />
+    <Compile Include="Intrafaces\IArea.vb" />
     <Compile Include="Clases\Cuadrado.vb" />
     <Compile Include="Clases\Hexagono.vb" />
     <Compile Include="Clases\Octagono.vb" />
     <Compile Include="Clases\Pentagono.vb" />
     <Compile Include="Clases\Rectangulo.vb" />
+    <Compile Include="Intrafaces\IPerimetro.vb" />
     <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
