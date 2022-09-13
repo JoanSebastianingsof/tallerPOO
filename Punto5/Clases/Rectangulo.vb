@@ -1,8 +1,16 @@
 ﻿Public Class Rectangulo : Inherits Figura
-    Dim area As Double
-    Dim perimetro As Double
-    Public Sub New(alto As Double, ancho As Double, numeroLados As Integer, tamañoLados As Integer)
-        MyBase.New(alto, ancho, numeroLados, tamañoLados)
+
+    Dim tamañoLado1 As Double
+    Dim tamañoLado2 As Double
+
+
+    Public Sub New(alto As Double, ancho As Double, area As Double, perimetro As Double, tamañoLado1 As Double, tamañoLado2 As Double)
+        MyBase.New(alto, ancho, area, perimetro)
+        Me.tamañoLado1 = tamañoLado1
+        Me.tamañoLado2 = tamañoLado2
+
+
+
     End Sub
 
 
@@ -11,8 +19,9 @@
         Return area
     End Function
     Public Function calcularPerimetro()
-        perimetro = numeroLados * tamañoLados
+        perimetro = tamañoLado1 + tamañoLado2
         Return perimetro
     End Function
+
 
 End Class

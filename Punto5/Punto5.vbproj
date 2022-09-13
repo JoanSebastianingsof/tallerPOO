@@ -76,7 +76,7 @@
     <Compile Include="Clases\Octagono.vb" />
     <Compile Include="Clases\Pentagono.vb" />
     <Compile Include="Clases\Rectangulo.vb" />
-    <Compile Include="Intrafaces\IPerimetro.vb" />
+    <Compile Include="Intrafaces\ICalculo.vb" />
     <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">

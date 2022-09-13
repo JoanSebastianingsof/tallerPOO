@@ -1,8 +1,10 @@
 ﻿Public Class Cuadrado : Inherits Figura
-    Dim area As Double
-    Dim perimetro As Double
-    Public Sub New(alto As Double, ancho As Double, numeroLados As Integer, tamañoLados As Integer)
-        MyBase.New(alto, ancho, numeroLados, tamañoLados)
+    Dim tamañoLados As Integer
+    Dim numeroLados As Integer
+    Public Sub New(alto As Double, ancho As Double, area As Double, perimetro As Double, tamañoLados As Integer, numeroLados As Integer)
+        MyBase.New(alto, ancho, area, perimetro)
+        Me.tamañoLados = tamañoLados
+        Me.numeroLados = numeroLados
     End Sub
 
 

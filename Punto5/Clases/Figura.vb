@@ -1,26 +1,27 @@
 ﻿Public Class Figura
     Implements IArea
-    Implements IPerimetro
+    Implements ICalculo
 
     Private _alto As Double
     Private _ancho As Double
-    Private _numeroLados As Integer
-    Private _tamañoLados As Integer
+    Private _area As Double
+    Private _perimetro As Double
 
 
 
     Public Sub New()
         _alto = 0
         _ancho = 0
-        _numeroLados = 0
-        _tamañoLados = 0
+        _area = 0
+        _perimetro = 0
     End Sub
 
-    Public Sub New(alto As Double, ancho As Double, numeroLados As Integer, tamañoLados As Integer)
+    Public Sub New(alto As Double, ancho As Double, area As Double, perimetro As Double)
         _alto = alto
         _ancho = ancho
-        _numeroLados = numeroLados
-        _tamañoLados = tamañoLados
+        _area = area
+        _perimetro = perimetro
+
     End Sub
 
     Public Property alto As Double Implements IArea.alto
@@ -42,24 +43,21 @@
         End Set
     End Property
 
-    Public Property numeroLados As Integer Implements IPerimetro.numeroLados
+    Public Property area As Double Implements ICalculo.area
         Get
-            Return _numeroLados
-        End Get
-        Set(value As Integer)
-            _numeroLados = value
-        End Set
-    End Property
-
-    Public Property tamañoLados As Double Implements IPerimetro.tamañoLados
-        Get
-            Return _tamañoLados
+            Return _area
         End Get
         Set(value As Double)
-            _tamañoLados = value
-
+            _area = value
         End Set
     End Property
 
-
+    Public Property perimetro As Double Implements ICalculo.perimetro
+        Get
+            Return _perimetro
+        End Get
+        Set(value As Double)
+            _perimetro = value
+        End Set
+    End Property
 End Class
